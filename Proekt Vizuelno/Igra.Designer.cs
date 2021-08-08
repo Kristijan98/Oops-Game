@@ -48,6 +48,7 @@ namespace Proekt_Vizuelno
             this.button4.Tag = "4";
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkAnswerEvent);
             // 
             // button3
             // 
@@ -58,6 +59,7 @@ namespace Proekt_Vizuelno
             this.button3.Tag = "3";
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkAnswerEvent);
             // 
             // button1
             // 
@@ -68,6 +70,7 @@ namespace Proekt_Vizuelno
             this.button1.Tag = "1";
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkAnswerEvent);
             // 
             // button2
             // 
@@ -78,6 +81,7 @@ namespace Proekt_Vizuelno
             this.button2.Tag = "2";
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.checkAnswerEvent);
             // 
             // label1
             // 
