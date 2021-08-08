@@ -286,7 +286,7 @@ namespace Proekt_Vizuelno
                     button1.Text = "Црвена";
                     button2.Text = "Розева";
                     button3.Text = "Жолта";
-                    button4.Text = "Розева";
+                    button4.Text = "Бела";
 
                     correctAnswer = 3;
 
