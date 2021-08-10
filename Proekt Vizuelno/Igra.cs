@@ -40,6 +40,7 @@ namespace Proekt_Vizuelno
 
             int buttonTag = Convert.ToInt32(senderObject.Tag);
 
+
             if (buttonTag == correctAnswer)
             {
                 score++;

@@ -13,6 +13,7 @@ namespace Proekt_Vizuelno
     public partial class Pochetok : Form
     {
         Igra igra = new Igra();
+
         Upatstvo upatstvo = new Upatstvo();
 
         public Pochetok()

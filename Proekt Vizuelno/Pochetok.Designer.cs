@@ -37,7 +37,7 @@ namespace Proekt_Vizuelno
             // 
             // kakoSeigra
             // 
-            this.kakoSeigra.Location = new System.Drawing.Point(225, 443);
+            this.kakoSeigra.Location = new System.Drawing.Point(240, 443);
             this.kakoSeigra.Name = "kakoSeigra";
             this.kakoSeigra.Size = new System.Drawing.Size(129, 23);
             this.kakoSeigra.TabIndex = 5;
