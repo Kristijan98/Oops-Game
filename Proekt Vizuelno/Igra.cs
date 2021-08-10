@@ -20,7 +20,7 @@ namespace Proekt_Vizuelno
         int percentage;
         int totalQuestions;
 
-       
+        int timeLeft;
 
         public Igra()
         {
@@ -29,7 +29,10 @@ namespace Proekt_Vizuelno
 
             askQuestion(questionNumber);
 
+            tbTimer.Text = "00:30";
             totalQuestions = 22;
+            timeLeft = 30;
+            timer1.Start();
         }
 
 
@@ -367,6 +370,10 @@ namespace Proekt_Vizuelno
 
         }
 
-      
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timeLeft -= 1;
+            tbTimer.Text = String.Format("{0}:{1}", timeLeft/60 , timeLeft%60);
+        }
     }
 }
