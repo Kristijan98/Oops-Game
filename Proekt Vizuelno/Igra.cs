@@ -26,7 +26,6 @@ namespace Proekt_Vizuelno
         {
             InitializeComponent();
 
-
             askQuestion(questionNumber);
 
             tbTimer.Text = "00:30";
@@ -42,6 +41,7 @@ namespace Proekt_Vizuelno
             var senderObject = (Button)sender;
 
             int buttonTag = Convert.ToInt32(senderObject.Tag);
+
 
             if (buttonTag == correctAnswer)
             {
@@ -60,7 +60,7 @@ namespace Proekt_Vizuelno
                     "Процент на успешност " + percentage + "%" + Environment.NewLine +
                     "Кликнете ОК за повторно"
                     );
-
+                
                 score = 0;
                 questionNumber = 0;
                 askQuestion(questionNumber);

@@ -12,8 +12,6 @@ namespace Proekt_Vizuelno
 {
     public partial class Pochetok : Form
     {
-        Igra igra = new Igra();
-        Upatstvo upatstvo = new Upatstvo();
 
         public Pochetok()
         {
@@ -22,13 +20,19 @@ namespace Proekt_Vizuelno
         }
         private void button1_Click(object sender, EventArgs e)
         {
+         
+            Igra igra = new Igra();
             igra.Show();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            Upatstvo upatstvo = new Upatstvo();
             upatstvo.Show();
         }
+
+        
     }
   }
