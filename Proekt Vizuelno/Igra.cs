@@ -19,13 +19,13 @@ namespace Proekt_Vizuelno
         int score;
         int percentage;
         int totalQuestions;
-
        
+
+     
 
         public Igra()
         {
             InitializeComponent();
-
 
             askQuestion(questionNumber);
 
@@ -58,7 +58,7 @@ namespace Proekt_Vizuelno
                     "Процент на успешност " + percentage + "%" + Environment.NewLine +
                     "Кликнете ОК за повторно"
                     );
-
+                
                 score = 0;
                 questionNumber = 0;
                 askQuestion(questionNumber);
