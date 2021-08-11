@@ -144,6 +144,7 @@ namespace Proekt_Vizuelno
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Upatstvo";
             this.Text = "Upatstvo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
