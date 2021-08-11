@@ -37,9 +37,9 @@ namespace Proekt_Vizuelno
             // 
             // kakoSeigra
             // 
-            this.kakoSeigra.Location = new System.Drawing.Point(240, 443);
+            this.kakoSeigra.Location = new System.Drawing.Point(219, 443);
             this.kakoSeigra.Name = "kakoSeigra";
-            this.kakoSeigra.Size = new System.Drawing.Size(129, 23);
+            this.kakoSeigra.Size = new System.Drawing.Size(150, 23);
             this.kakoSeigra.TabIndex = 5;
             this.kakoSeigra.Text = "Како се игра";
             this.kakoSeigra.UseVisualStyleBackColor = true;
@@ -47,9 +47,9 @@ namespace Proekt_Vizuelno
             // 
             // zapochni
             // 
-            this.zapochni.Location = new System.Drawing.Point(32, 443);
+            this.zapochni.Location = new System.Drawing.Point(21, 443);
             this.zapochni.Name = "zapochni";
-            this.zapochni.Size = new System.Drawing.Size(127, 23);
+            this.zapochni.Size = new System.Drawing.Size(148, 23);
             this.zapochni.TabIndex = 4;
             this.zapochni.Text = "Започни";
             this.zapochni.UseVisualStyleBackColor = true;
@@ -68,7 +68,7 @@ namespace Proekt_Vizuelno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 520);
+            this.ClientSize = new System.Drawing.Size(481, 520);
             this.Controls.Add(this.kakoSeigra);
             this.Controls.Add(this.zapochni);
             this.Controls.Add(this.pictureBox1);

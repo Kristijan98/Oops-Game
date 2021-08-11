@@ -13,7 +13,6 @@ namespace Proekt_Vizuelno
     public partial class Igra : Form
     {
 
-
         int correctAnswer;
         int questionNumber = 1;
         int score;
@@ -28,9 +27,9 @@ namespace Proekt_Vizuelno
 
             askQuestion(questionNumber);
 
-            tbTimer.Text = "00:30";
+            tbTimer.Text = "00:05";
             totalQuestions = 22;
-            timeLeft = 30;
+            timeLeft = 5;
             timer1.Start();
         }
 
@@ -38,6 +37,7 @@ namespace Proekt_Vizuelno
 
         private void checkAnswerEvent(object sender, EventArgs e)
         {
+         
             var senderObject = (Button)sender;
 
             int buttonTag = Convert.ToInt32(senderObject.Tag);
@@ -47,8 +47,9 @@ namespace Proekt_Vizuelno
             {
                 score++;
             }
-
-            if (questionNumber == totalQuestions)
+            
+        
+            if (questionNumber == totalQuestions || timeLeft == 0)
             {
                 // work out the percentage
 
@@ -60,10 +61,14 @@ namespace Proekt_Vizuelno
                     "Процент на успешност " + percentage + "%" + Environment.NewLine +
                     "Кликнете ОК за повторно"
                     );
-                
+
+                tbTimer.Text = "00:05";
+                timeLeft = 5;
+                timer1.Start();
                 score = 0;
                 questionNumber = 0;
                 askQuestion(questionNumber);
+           
 
             }
 
@@ -372,8 +377,16 @@ namespace Proekt_Vizuelno
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timeLeft -= 1;
-            tbTimer.Text = String.Format("{0}:{1}", timeLeft/60 , timeLeft%60);
+              if(timeLeft > 0)
+            {
+                timeLeft -= 1;
+                tbTimer.Text = String.Format("{0}:{1}", timeLeft / 60, timeLeft % 60);
+
+            }
+           
+             
+           
+          
         }
     }
 }

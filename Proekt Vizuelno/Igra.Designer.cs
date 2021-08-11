@@ -44,10 +44,9 @@ namespace Proekt_Vizuelno
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(137, 398);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(103, 323);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(253, 41);
+            this.button4.Size = new System.Drawing.Size(190, 33);
             this.button4.TabIndex = 11;
             this.button4.Tag = "4";
             this.button4.Text = "button4";
@@ -56,10 +55,9 @@ namespace Proekt_Vizuelno
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(537, 398);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(403, 323);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(260, 41);
+            this.button3.Size = new System.Drawing.Size(195, 33);
             this.button3.TabIndex = 10;
             this.button3.Tag = "3";
             this.button3.Text = "button3";
@@ -68,10 +66,9 @@ namespace Proekt_Vizuelno
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(137, 348);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(103, 283);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(253, 42);
+            this.button1.Size = new System.Drawing.Size(190, 34);
             this.button1.TabIndex = 9;
             this.button1.Tag = "1";
             this.button1.Text = "button1";
@@ -80,10 +77,9 @@ namespace Proekt_Vizuelno
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(537, 348);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(403, 283);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 42);
+            this.button2.Size = new System.Drawing.Size(195, 34);
             this.button2.TabIndex = 8;
             this.button2.Tag = "2";
             this.button2.Text = "button2";
@@ -93,19 +89,17 @@ namespace Proekt_Vizuelno
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(440, 335);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(330, 272);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 7;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Proekt_Vizuelno.Properties.Resources.ZELENA;
-            this.pictureBox2.Location = new System.Drawing.Point(137, 33);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(103, 27);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(660, 284);
+            this.pictureBox2.Size = new System.Drawing.Size(495, 231);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -118,16 +112,17 @@ namespace Proekt_Vizuelno
             // tbTimer
             // 
             this.tbTimer.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbTimer.Location = new System.Drawing.Point(872, 33);
+            this.tbTimer.Location = new System.Drawing.Point(625, 27);
+            this.tbTimer.Margin = new System.Windows.Forms.Padding(2);
             this.tbTimer.Name = "tbTimer";
-            this.tbTimer.Size = new System.Drawing.Size(73, 34);
+            this.tbTimer.Size = new System.Drawing.Size(56, 29);
             this.tbTimer.TabIndex = 12;
             // 
             // Igra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 562);
+            this.ClientSize = new System.Drawing.Size(718, 408);
             this.Controls.Add(this.tbTimer);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -135,7 +130,6 @@ namespace Proekt_Vizuelno
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Igra";
             this.Text = "StartForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
