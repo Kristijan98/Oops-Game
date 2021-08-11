@@ -21,15 +21,17 @@ namespace Proekt_Vizuelno
 
         int timeLeft;
 
+        Random random = new Random();//random number
+
         public Igra()
         {
             InitializeComponent();
 
             askQuestion(questionNumber);
 
-            tbTimer.Text = "00:05";
-            totalQuestions = 22;
-            timeLeft = 5;
+            tbTimer.Text = "00:30";
+            totalQuestions = 3;
+            timeLeft = 30;
             timer1.Start();
         }
 
@@ -62,9 +64,7 @@ namespace Proekt_Vizuelno
                     "Кликнете ОК за повторно"
                     );
 
-                tbTimer.Text = "00:05";
-                timeLeft = 5;
-                timer1.Start();
+               
                 score = 0;
                 questionNumber = 0;
                 askQuestion(questionNumber);
@@ -72,9 +72,11 @@ namespace Proekt_Vizuelno
 
             }
 
-            questionNumber++;
-            askQuestion(questionNumber);
 
+
+            questionNumber = random.Next(1,21);
+            askQuestion(questionNumber);
+            
         }
 
         private void askQuestion(int qnum)
@@ -83,6 +85,8 @@ namespace Proekt_Vizuelno
             switch (qnum)
             {
                 case 1:
+
+                    
 
                     pictureBox2.Image = Properties.Resources.GJEVREK;
 
@@ -382,6 +386,9 @@ namespace Proekt_Vizuelno
                 timeLeft -= 1;
                 tbTimer.Text = String.Format("{0}:{1}", timeLeft / 60, timeLeft % 60);
 
+            } else{
+                timer1.Stop();
+                timeLeft = 0;
             }
            
              

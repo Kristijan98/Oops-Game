@@ -60,6 +60,7 @@
     <Compile Include="Igra.Designer.cs">
       <DependentUpon>Igra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Question.cs" />
     <Compile Include="Upatstvo.cs">
       <SubType>Form</SubType>
     </Compile>
