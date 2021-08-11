@@ -130,6 +130,7 @@ namespace Proekt_Vizuelno
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Igra";
             this.Text = "StartForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
