@@ -17,22 +17,27 @@ namespace Proekt_Vizuelno
         int questionNumber = 1;
         int score;
         int percentage;
-        int totalQuestions;
-
         int timeLeft;
 
-        Random random = new Random();//random number
+        Random random = new Random();
+
+        int broj;
+      
+
 
         public Igra()
         {
             InitializeComponent();
+            broj = random.Next(1, 22);
+            
+            askQuestion(broj);
 
-            askQuestion(questionNumber);
-
-            tbTimer.Text = "00:30";
-            totalQuestions = 3;
-            timeLeft = 30;
+            tbTimer.Text = "00:15";
+            timeLeft = 15;
             timer1.Start();
+
+  
+
         }
 
 
@@ -44,19 +49,20 @@ namespace Proekt_Vizuelno
 
             int buttonTag = Convert.ToInt32(senderObject.Tag);
 
-
+          
             if (buttonTag == correctAnswer)
             {
                 score++;
             }
-            
+
+  
         
-            if (questionNumber == totalQuestions || timeLeft == 0)
+            if (questionNumber == 10 || timeLeft == 0)
             {
-                // work out the percentage
 
-                percentage = (int)Math.Round((double)(score * 100) / totalQuestions);
-
+                percentage = (int)Math.Round((double)(score * 100) / 10);
+                tbTimer.Text = "00:00";
+                timer1.Stop();
                 MessageBox.Show(
                     "Квизот заврши!" + Environment.NewLine +
                     "Одговоривте " + score + " точни прашања." + Environment.NewLine +
@@ -64,30 +70,34 @@ namespace Proekt_Vizuelno
                     "Кликнете ОК за повторно"
                     );
 
-               
+                tbTimer.Text = "00:15";
+                timeLeft = 15;
+                timer1.Start();
+                percentage = 0;
                 score = 0;
                 questionNumber = 0;
-                askQuestion(questionNumber);
+                askQuestion(broj);
            
 
             }
 
 
 
-            questionNumber = random.Next(1,21);
-            askQuestion(questionNumber);
+            questionNumber++;
+            broj = random.Next(1, 22);
+            askQuestion(broj);
             
         }
 
         private void askQuestion(int qnum)
         {
 
+
             switch (qnum)
             {
                 case 1:
 
-                    
-
+              
                     pictureBox2.Image = Properties.Resources.GJEVREK;
 
 
@@ -374,10 +384,9 @@ namespace Proekt_Vizuelno
                     break;
 
             }
-
-
-
         }
+
+      
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -386,14 +395,35 @@ namespace Proekt_Vizuelno
                 timeLeft -= 1;
                 tbTimer.Text = String.Format("{0}:{1}", timeLeft / 60, timeLeft % 60);
 
-            } else{
-                timer1.Stop();
-                timeLeft = 0;
             }
+              else
+            {
+                timer1.Stop();
+
+                MessageBox.Show(
+                   "Квизот заврши!" + Environment.NewLine +
+                   "Одговоривте " + score + " точни прашања." + Environment.NewLine +
+                   "Процент на успешност " + percentage + "%" + Environment.NewLine +
+                   "Кликнете ОК за повторно"
+                   );
+
+                tbTimer.Text = "00:15";
+                timeLeft = 15;
+                timer1.Start();
+
+                score = 0;
+                questionNumber = 0;
+                broj = random.Next(1, 22);
+
+                askQuestion(broj);
+                
+
+            }
+
            
-             
-           
-          
+
+
+
         }
     }
 }
