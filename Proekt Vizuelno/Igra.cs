@@ -401,7 +401,7 @@ namespace Proekt_Vizuelno
                 timer1.Stop();
 
                 MessageBox.Show(
-                   "Квизот заврши!" + Environment.NewLine +
+                   "Квизот заврши, истече времето!" + Environment.NewLine +
                    "Одговоривте " + score + " точни прашања." + Environment.NewLine +
                    "Процент на успешност " + percentage + "%" + Environment.NewLine +
                    "Кликнете ОК за повторно"
