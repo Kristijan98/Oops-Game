@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proekt_Vizuelno
 {
-    public partial class Upatstvo : Form
+    public partial class Instruction : Form
     {
-        public Upatstvo()
+        public Instruction()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace Proekt_Vizuelno
 {
-    partial class Igra
+    partial class Game
     {
         /// <summary>
         /// Required designer variable.
@@ -66,6 +66,7 @@ namespace Proekt_Vizuelno
             // 
             // button1
             // 
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Location = new System.Drawing.Point(103, 283);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 34);

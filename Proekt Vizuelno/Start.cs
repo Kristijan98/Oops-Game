@@ -12,11 +12,11 @@ using System.Runtime.InteropServices;
 
 namespace Proekt_Vizuelno
 {
-    public partial class Pochetok : Form
+    public partial class Start : Form
     {
       
 
-        public Pochetok()
+        public Start()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace Proekt_Vizuelno
         private void button1_Click(object sender, EventArgs e)
         {
          
-            Igra igra = new Igra();
+            Game igra = new Game();
             igra.Show();
 
         }
@@ -34,7 +34,7 @@ namespace Proekt_Vizuelno
         private void button2_Click(object sender, EventArgs e)
         {
 
-            Upatstvo upatstvo = new Upatstvo();
+            Instruction upatstvo = new Instruction();
             upatstvo.Show();
         }
 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Proekt_Vizuelno
 {
-    public partial class Igra : Form
+    public partial class Game : Form
     {
 
         int correctAnswer;
@@ -20,13 +20,15 @@ namespace Proekt_Vizuelno
         int timeLeft;
 
         Random random = new Random();
-
+        
         int broj;
       
 
 
-        public Igra()
+        public Game()
         {
+         
+
             InitializeComponent();
             broj = random.Next(1, 22);
             

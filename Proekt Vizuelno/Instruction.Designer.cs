@@ -1,7 +1,7 @@
 ﻿
 namespace Proekt_Vizuelno
 {
-    partial class Upatstvo
+    partial class Instruction
     {
         /// <summary>
         /// Required designer variable.
