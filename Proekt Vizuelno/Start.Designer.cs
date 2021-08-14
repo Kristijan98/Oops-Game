@@ -41,9 +41,10 @@ namespace Proekt_Vizuelno
             // 
             // kakoSeigra
             // 
-            this.kakoSeigra.Location = new System.Drawing.Point(219, 443);
+            this.kakoSeigra.Location = new System.Drawing.Point(292, 545);
+            this.kakoSeigra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kakoSeigra.Name = "kakoSeigra";
-            this.kakoSeigra.Size = new System.Drawing.Size(150, 23);
+            this.kakoSeigra.Size = new System.Drawing.Size(200, 28);
             this.kakoSeigra.TabIndex = 5;
             this.kakoSeigra.Text = "Како се игра";
             this.kakoSeigra.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@ namespace Proekt_Vizuelno
             // 
             // zapochni
             // 
-            this.zapochni.Location = new System.Drawing.Point(21, 443);
+            this.zapochni.Location = new System.Drawing.Point(28, 545);
+            this.zapochni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zapochni.Name = "zapochni";
-            this.zapochni.Size = new System.Drawing.Size(148, 23);
+            this.zapochni.Size = new System.Drawing.Size(197, 28);
             this.zapochni.TabIndex = 4;
             this.zapochni.Text = "Започни";
             this.zapochni.UseVisualStyleBackColor = true;
@@ -62,20 +64,22 @@ namespace Proekt_Vizuelno
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proekt_Vizuelno.Properties.Resources.Screenshot_11;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(348, 425);
+            this.pictureBox1.Size = new System.Drawing.Size(464, 523);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(86, 54);
+            this.label1.Location = new System.Drawing.Point(115, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 61);
+            this.label1.Size = new System.Drawing.Size(285, 75);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Добредојдовте на \"Oops\" базирана на класичната игра со карти";
+            this.label1.Text = "Добредојдовте на \"Oops\". Базирана на класичната игра со карти";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
@@ -86,21 +90,23 @@ namespace Proekt_Vizuelno
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(80, 76);
+            this.label2.Location = new System.Drawing.Point(107, 94);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 16);
+            this.label2.Size = new System.Drawing.Size(0, 19);
             this.label2.TabIndex = 7;
             // 
             // Start
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 520);
+            this.ClientSize = new System.Drawing.Size(641, 640);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kakoSeigra);
             this.Controls.Add(this.zapochni);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Start";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Pochetok_Load);
