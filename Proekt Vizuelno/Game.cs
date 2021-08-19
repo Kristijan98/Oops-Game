@@ -402,6 +402,8 @@ namespace Proekt_Vizuelno
             {
                 timer1.Stop();
 
+                percentage = (int)Math.Round((double)(score * 100) / 10);
+
                 MessageBox.Show(
                    "Квизот заврши, истече времето!" + Environment.NewLine +
                    "Одговоривте " + score + " точни прашања." + Environment.NewLine +
