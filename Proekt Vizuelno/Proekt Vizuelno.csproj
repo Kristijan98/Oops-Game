@@ -197,5 +197,8 @@
   <ItemGroup>
     <None Include="Resources\Screenshot_11.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GameScreenshots\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
