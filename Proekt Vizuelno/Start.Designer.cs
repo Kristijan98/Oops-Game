@@ -42,7 +42,7 @@ namespace Proekt_Vizuelno
             // kakoSeigra
             // 
             this.kakoSeigra.Location = new System.Drawing.Point(292, 545);
-            this.kakoSeigra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kakoSeigra.Margin = new System.Windows.Forms.Padding(4);
             this.kakoSeigra.Name = "kakoSeigra";
             this.kakoSeigra.Size = new System.Drawing.Size(200, 28);
             this.kakoSeigra.TabIndex = 5;
@@ -53,7 +53,7 @@ namespace Proekt_Vizuelno
             // zapochni
             // 
             this.zapochni.Location = new System.Drawing.Point(28, 545);
-            this.zapochni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zapochni.Margin = new System.Windows.Forms.Padding(4);
             this.zapochni.Name = "zapochni";
             this.zapochni.Size = new System.Drawing.Size(197, 28);
             this.zapochni.TabIndex = 4;
@@ -65,7 +65,7 @@ namespace Proekt_Vizuelno
             // 
             this.pictureBox1.Image = global::Proekt_Vizuelno.Properties.Resources.Screenshot_11;
             this.pictureBox1.Location = new System.Drawing.Point(28, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(464, 523);
             this.pictureBox1.TabIndex = 3;
@@ -100,13 +100,14 @@ namespace Proekt_Vizuelno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(641, 640);
+            this.ClientSize = new System.Drawing.Size(522, 590);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kakoSeigra);
             this.Controls.Add(this.zapochni);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Start";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Pochetok_Load);

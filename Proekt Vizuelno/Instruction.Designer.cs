@@ -50,9 +50,10 @@ namespace Proekt_Vizuelno
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(479, 521);
+            this.button1.Location = new System.Drawing.Point(506, 643);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
+            this.button1.Size = new System.Drawing.Size(113, 28);
             this.button1.TabIndex = 1;
             this.button1.Text = "Следно";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,80 +62,88 @@ namespace Proekt_Vizuelno
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proekt_Vizuelno.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(246, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(174, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(334, 499);
+            this.pictureBox1.Size = new System.Drawing.Size(445, 614);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Proekt_Vizuelno.Properties.Resources._2;
-            this.pictureBox2.Location = new System.Drawing.Point(246, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(174, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(334, 478);
+            this.pictureBox2.Size = new System.Drawing.Size(445, 588);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Proekt_Vizuelno.Properties.Resources._3;
-            this.pictureBox3.Location = new System.Drawing.Point(246, -1);
+            this.pictureBox3.Location = new System.Drawing.Point(174, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(334, 499);
+            this.pictureBox3.Size = new System.Drawing.Size(445, 614);
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Proekt_Vizuelno.Properties.Resources._4;
-            this.pictureBox4.Location = new System.Drawing.Point(246, -1);
+            this.pictureBox4.Location = new System.Drawing.Point(174, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(334, 452);
+            this.pictureBox4.Size = new System.Drawing.Size(445, 556);
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Proekt_Vizuelno.Properties.Resources._5;
-            this.pictureBox5.Location = new System.Drawing.Point(246, -1);
+            this.pictureBox5.Location = new System.Drawing.Point(174, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(320, 516);
+            this.pictureBox5.Size = new System.Drawing.Size(427, 635);
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Proekt_Vizuelno.Properties.Resources._6;
-            this.pictureBox6.Location = new System.Drawing.Point(246, -1);
+            this.pictureBox6.Location = new System.Drawing.Point(174, 0);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(320, 516);
+            this.pictureBox6.Size = new System.Drawing.Size(427, 635);
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Proekt_Vizuelno.Properties.Resources._7;
-            this.pictureBox7.Location = new System.Drawing.Point(246, -1);
+            this.pictureBox7.Location = new System.Drawing.Point(174, 0);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(320, 516);
+            this.pictureBox7.Size = new System.Drawing.Size(427, 635);
             this.pictureBox7.TabIndex = 7;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Proekt_Vizuelno.Properties.Resources._8;
-            this.pictureBox8.Location = new System.Drawing.Point(246, -1);
+            this.pictureBox8.Location = new System.Drawing.Point(174, 0);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(334, 516);
+            this.pictureBox8.Size = new System.Drawing.Size(445, 635);
             this.pictureBox8.TabIndex = 8;
             this.pictureBox8.TabStop = false;
             // 
-            // Upatstvo
+            // Instruction
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 547);
+            this.ClientSize = new System.Drawing.Size(787, 673);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox8);
@@ -145,7 +154,8 @@ namespace Proekt_Vizuelno
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "Upatstvo";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Instruction";
             this.Text = "Upatstvo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
