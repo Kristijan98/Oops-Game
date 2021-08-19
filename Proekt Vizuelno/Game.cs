@@ -65,12 +65,18 @@ namespace Proekt_Vizuelno
                 percentage = (int)Math.Round((double)(score * 100) / 10);
                 tbTimer.Text = "00:00";
                 timer1.Stop();
-                MessageBox.Show(
-                    "Квизот заврши!" + Environment.NewLine +
+
+                string message = "Играта заврши!" + Environment.NewLine +
                     "Одговоривте " + score + " точни прашања." + Environment.NewLine +
                     "Процент на успешност " + percentage + "%" + Environment.NewLine +
-                    "Кликнете ОК за повторно"
-                    );
+                    "Кликнете ОК за повторно или Cancel за излез";
+                DialogResult result = MessageBox.Show(message, "", MessageBoxButtons.OKCancel);
+
+                if (result == DialogResult.Cancel)
+                {
+                    this.Close();
+                }
+
 
                 tbTimer.Text = "00:15";
                 timeLeft = 15;
@@ -404,12 +410,16 @@ namespace Proekt_Vizuelno
 
                 percentage = (int)Math.Round((double)(score * 100) / 10);
 
-                MessageBox.Show(
-                   "Квизот заврши, истече времето!" + Environment.NewLine +
-                   "Одговоривте " + score + " точни прашања." + Environment.NewLine +
-                   "Процент на успешност " + percentage + "%" + Environment.NewLine +
-                   "Кликнете ОК за повторно"
-                   );
+                string message = "Играта заврши!" + Environment.NewLine +
+                     "Одговоривте " + score + " точни прашања." + Environment.NewLine +
+                     "Процент на успешност " + percentage + "%" + Environment.NewLine +
+                     "Кликнете ОК за повторно или Cancel за излез";
+                DialogResult result = MessageBox.Show(message, "", MessageBoxButtons.OKCancel);
+
+                if (result == DialogResult.Cancel)
+                {
+                    this.Close();
+                }
 
                 tbTimer.Text = "00:15";
                 timeLeft = 15;
