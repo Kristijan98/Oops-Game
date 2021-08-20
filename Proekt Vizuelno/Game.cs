@@ -70,12 +70,15 @@ namespace Proekt_Vizuelno
                     "Одговоривте " + score + " точни прашања." + Environment.NewLine +
                     "Процент на успешност " + percentage + "%" + Environment.NewLine +
                     "Кликнете ОК за повторно или Cancel за излез";
+                
                 DialogResult result = MessageBox.Show(message, "", MessageBoxButtons.OKCancel);
 
                 if (result == DialogResult.Cancel)
                 {
                     this.Close();
+                    timer1.Stop();
                 }
+               
 
 
                 tbTimer.Text = "00:15";
@@ -420,10 +423,14 @@ namespace Proekt_Vizuelno
                 {
                     this.Close();
                 }
+                else
+                {
+                    tbTimer.Text = "00:15";
+                    timeLeft = 15;
+                    timer1.Start();
+                }
 
-                tbTimer.Text = "00:15";
-                timeLeft = 15;
-                timer1.Start();
+
 
                 score = 0;
                 questionNumber = 0;
@@ -433,11 +440,6 @@ namespace Proekt_Vizuelno
                 
 
             }
-
-           
-
-
-
         }
     }
 }
