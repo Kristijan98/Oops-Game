@@ -119,7 +119,7 @@ namespace Proekt_Vizuelno
             this.tbTimer.Size = new System.Drawing.Size(56, 29);
             this.tbTimer.TabIndex = 12;
             // 
-            // Igra
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@ namespace Proekt_Vizuelno
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Igra";
+            this.Name = "Game";
             this.Text = "StartForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

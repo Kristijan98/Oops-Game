@@ -38,8 +38,6 @@ namespace Proekt_Vizuelno
             timeLeft = 15;
             timer1.Start();
 
-  
-
         }
 
 
@@ -51,7 +49,8 @@ namespace Proekt_Vizuelno
 
             int buttonTag = Convert.ToInt32(senderObject.Tag);
 
-          
+           
+
             if (buttonTag == correctAnswer)
             {
                 score++;
@@ -65,6 +64,7 @@ namespace Proekt_Vizuelno
                 percentage = (int)Math.Round((double)(score * 100) / 10);
                 tbTimer.Text = "00:00";
                 timer1.Stop();
+                questionNumber = 0;
 
                 string message = "Играта заврши!" + Environment.NewLine +
                     "Одговоривте " + score + " точни прашања." + Environment.NewLine +
@@ -75,19 +75,26 @@ namespace Proekt_Vizuelno
 
                 if (result == DialogResult.Cancel)
                 {
-                    this.Close();
+                    
+
                     timer1.Stop();
+
+                    this.Close();
+                }
+                else
+                {
+                    tbTimer.Text = "00:15";
+                    timeLeft = 15;
+                    timer1.Start();
+                    percentage = 0;
+                    score = 0;
+                    questionNumber = 0;
+                    askQuestion(broj);
                 }
                
 
 
-                tbTimer.Text = "00:15";
-                timeLeft = 15;
-                timer1.Start();
-                percentage = 0;
-                score = 0;
-                questionNumber = 0;
-                askQuestion(broj);
+             
            
 
             }
@@ -413,7 +420,7 @@ namespace Proekt_Vizuelno
 
                 percentage = (int)Math.Round((double)(score * 100) / 10);
 
-                string message = "Играта заврши!" + Environment.NewLine +
+                string message = "Играта заврши истече времето!" + Environment.NewLine +
                      "Одговоривте " + score + " точни прашања." + Environment.NewLine +
                      "Процент на успешност " + percentage + "%" + Environment.NewLine +
                      "Кликнете ОК за повторно или Cancel за излез";
@@ -422,6 +429,7 @@ namespace Proekt_Vizuelno
                 if (result == DialogResult.Cancel)
                 {
                     this.Close();
+                    timer1.Stop();
                 }
                 else
                 {
@@ -441,5 +449,7 @@ namespace Proekt_Vizuelno
 
             }
         }
+
+        
     }
 }
